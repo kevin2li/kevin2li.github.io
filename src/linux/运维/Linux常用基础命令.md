@@ -3,7 +3,9 @@ title: Linux常用基础命令
 category: Linux
 tag: [命令行]
 icon: pen-to-square
-order: 1
+sticky: true
+star: true
+order: 2
 date: 2023-03-23T07:31:59.690Z
 ---
 # 常用命令

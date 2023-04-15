@@ -4,6 +4,8 @@ category: Linux
 tag: [ssh]
 icon: pen-to-square
 order: 1
+sticky: true
+star: true
 date: 2023-04-08T08:21:36.934Z
 ---
 # 简介
