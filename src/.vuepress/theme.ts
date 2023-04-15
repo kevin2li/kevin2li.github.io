@@ -56,8 +56,12 @@ export default hopeTheme({
     blog: true,
 
     comment: {
-      // @ts-expect-error: You should generate and use your own comment service
+      //// @ts-expect-error: You should generate and use your own comment service
       provider: "Giscus",
+      repo: "kevin2li/docs_comments",
+      repoId: "R_kgDOJXLU1g",
+      category: "Announcements",
+      categoryId: "DIC_kwDOJXLU1s4CVzRQ"
     },
 
     // all features are enabled for demo, only preserve features you need here
