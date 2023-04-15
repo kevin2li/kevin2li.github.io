@@ -1,24 +1,29 @@
 import { defineUserConfig } from "vuepress";
+import { redirectPlugin } from "vuepress-plugin-redirect";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
-
+const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
 
-  locales: {
-    "/": {
-      lang: "en-US",
-      title: "Blog Demo",
-      description: "A blog demo for vuepress-theme-hope",
-    },
-    "/zh/": {
-      lang: "zh-CN",
-      title: "博客演示",
-      description: "vuepress-theme-hope 的博客演示",
-    },
-  },
+  lang: "zh-CN",
+  title: "Kevin2li's Blog",
+  description: "Kevin2li's Blog 的官方网站",
+  plugins: [searchProPlugin({ indexContent: true }), redirectPlugin()],
 
   theme,
-
+  pagePatterns: ["**/*.md", "!**/*.snippet.md", "!.vuepress", "!node_modules"],
+  alias: {
+    "@theme-hope/modules/info/components/TOC": path.resolve(
+      __dirname,
+      "./component/TOC.vue"
+    ),
+    // "@theme-hope/modules/sidebar/components/Sidebar": path.resolve(
+    //   __dirname,
+    //   "./component/Sidebar.vue"
+    // ),
+  }
   // Enable it with pwa
   // shouldPrefetch: false,
 });
