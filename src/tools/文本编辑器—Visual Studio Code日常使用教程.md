@@ -11,21 +11,6 @@ date: 2022-10-18T12:02:05.567Z
 
 <!-- more -->
 
----
-id: 7twx9ycf6a3z5nkpj9k3wt7
-title: VSCode使用教程
-desc: ''
-updated: 1682514168015
-created: 1682510699184
----
-
-## Cheetsheet
-![](https://blog.kevin2li.top/static/img/6222e6c763413175ed72a5d43b158aff.2022-09-13-22-21-14.png)
-
-<!-- more -->
-
-
-
 ## 常用快捷键
 ### 查看、修改、新建、删除快捷键
 1. 方法一  
