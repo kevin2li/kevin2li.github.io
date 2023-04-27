@@ -4,7 +4,7 @@ created: 1682573131987
 date: '2023-04-27'
 id: bwmouyxtd6gzwl1033tx4fx
 title: 使用Minio与Picgo搭建个人图床
-updated: 1682605641466
+updated: 1682606053705
 ---
 
 ## 简介
@@ -121,12 +121,15 @@ ddns --id <your_id> --token <your_token> --index4 "public" --dns "dnspod" --ipv4
 
 在插件设置中，搜索`minio`插件，点击安装即可。
 
-![](https://minio.kevin2li.top/image-bed/20230427144902.png) \###
-配置minio图床
-安装完成后，图床设置板块会多出一个MinIO图床，点击进行相关配置。 -
-`endPoint`: 填写公网服务器的IP - `port`: 填写minio服务的端口 -
-`accessKey`: 之前下载保存的文件里有 - `secretKey`:
-之前下载保存的文件里有 - `bucket`: 存储桶名称
+![](https://minio.kevin2li.top/image-bed/20230427144902.png)
+
+#### 配置minio图床
+安装完成后，图床设置板块会多出一个MinIO图床，点击进行相关配置。 
+- `endPoint`: 填写公网服务器的IP 
+- `port`: 填写minio服务的端口 
+- `accessKey`: 之前下载保存的文件里有 
+- `secretKey`:之前下载保存的文件里有 
+- `bucket`: 存储桶名称
 
 ![](https://minio.kevin2li.top/image-bed/20230427145101.png)
 
