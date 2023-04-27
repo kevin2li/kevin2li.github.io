@@ -5,7 +5,7 @@ date: '2023-04-26'
 desc: ''
 id: 43ze2mii87k0x1t6hd5fgnk
 title: 设备管理
-updated: 1682562373678
+updated: 1682588855816
 ---
 
 
@@ -24,8 +24,8 @@ nvidia-smi dmon
 ```
 - `gpustat`
 
-![image.png](https://blog.kevin2li.top/static/img/dc6fd11aa98f8b564e9957e19ef3f86f.image.png)
+![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/dc6fd11aa98f8b564e9957e19ef3f86f.image.png)
 
 - `nvtop`
 
-![image.png](https://blog.kevin2li.top/static/img/0e94990aba0beefddd56429077e3c838.image.png)
+![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/0e94990aba0beefddd56429077e3c838.image.png)

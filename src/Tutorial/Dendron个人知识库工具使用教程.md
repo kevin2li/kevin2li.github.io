@@ -5,7 +5,7 @@ date: '2023-04-26'
 desc: ''
 id: w856oji82penovksem8vhl3
 title: Dendron个人知识库工具使用教程
-updated: 1682514679314
+updated: 1682584751280
 ---
 
 # 简介
@@ -34,7 +34,9 @@ updated: 1682514679314
 | `Ctrl+K Ctrl+Shift+H` | Move Header, 把当前note光标下的标题移动到其他note尾部      |
 | `Ctrl+K Ctrl+Shift+S` | Move Selection, 把当前note鼠标选中的部分移动到其他note尾部 |
 | `Ctrl+K Ctrl+Shift+T` | Apply Template, 在当前note中应用模板                       |
+| `Ctrl+K Ctrl+Enter`   | Go to Note, 跳转到目标note，没有会自动新建                 |
 
+当创建很长名字的note时，可以先在文档中编辑好，然后光标放在名称上，然后使用`Dendron: Go to Note`会自动创建。
 
 ### link管理
 | 快捷键         | 功能                                                                                             |

@@ -5,7 +5,7 @@ date: '2023-04-26'
 desc: ''
 id: 3hkev9qfedy3hp4194vs6qg
 title: 网络管理
-updated: 1682562443240
+updated: 1682589185921
 ---
 
 ### 基本网络配置
@@ -374,4 +374,4 @@ sudo iftop -n
 ```
 输出：
 
-![image.png](https://kevin2li.top/static/img/c3347f697509e1a47e9cb8159b831999.image.png)
+![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/c3347f697509e1a47e9cb8159b831999.image.png)

@@ -50,6 +50,8 @@ networks:
   internal:
     driver: bridge
     name: vanblog-network
+  nginx:
+    external: true
 
 volumes:
   database-data:

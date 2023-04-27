@@ -5,7 +5,7 @@ date: '2023-04-26'
 desc: ''
 id: x9zf7smyqcligvln1rq5wfk
 title: 磁盘管理
-updated: 1682562381146
+updated: 1682589185941
 ---
 
 
@@ -119,7 +119,7 @@ lsblk -e 1,7
 lsblk --output NAME,SERIAL,MODEL,TRAN,TYPE,SIZE,FSTYPE,MOUNTPOINT
 ```
 
-![image.png](https://kevin2li.top/static/img/a782557c2deceee5720cf743b319a1c3.image.png)
+![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/a782557c2deceee5720cf743b319a1c3.image.png)
 - `lsusb`  
 
 ```bash
@@ -169,4 +169,4 @@ sudo iotop -p 22
 ```
 输出：
 
-![image.png](https://kevin2li.top/static/img/db000798190b020829a6a243333aac05.image.png)
+![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/db000798190b020829a6a243333aac05.image.png)
