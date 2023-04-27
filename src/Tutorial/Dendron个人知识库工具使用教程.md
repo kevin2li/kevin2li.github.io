@@ -1,9 +1,11 @@
 ---
+category: Tutorial
+created: 1682510384431
+date: '2023-04-26'
+desc: ''
 id: w856oji82penovksem8vhl3
 title: Dendron个人知识库工具使用教程
-desc: ''
 updated: 1682514679314
-created: 1682510384431
 ---
 
 # 简介

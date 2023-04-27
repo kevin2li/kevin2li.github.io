@@ -1,9 +1,11 @@
 ---
+category: Tutorial
+created: 1682510000115
+date: '2023-04-26'
+desc: ''
 id: lseo2fenqcnu2yvgyxegqfw
 title: socks5代理服务器搭建教程
-desc: ''
 updated: 1682510037517
-created: 1682510000115
 ---
 # 简介
 socks是一种网络传输协议，主要用于客户端与外网服务器之间通讯的中间传递。根据OSI七层模型来划分，SOCKS属于会话层协议，位于表示层与传输层之间。
