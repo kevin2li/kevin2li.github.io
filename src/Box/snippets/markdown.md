@@ -5,10 +5,10 @@ date: '2023-04-27'
 desc: ''
 id: ko2nhu3xd4ocfdlp4hbcmlh
 title: markdown
-updated: 1682644194047
+updated: 1682652980856
 ---
 
-``` json {.line-numbers}
+``` json 
 {
   "container": {
     "prefix": "container",
@@ -18,7 +18,7 @@ updated: 1682644194047
   "code": {
     "prefix": "code",
     "body": [
-      "``` ${1|bash,python,cpp,javascript,json,yaml,ini|} {.line-numbers}",
+      "``` ${1|bash,python,cpp,javascript,json,yaml,ini|} ",
       "$2",
       "```"
     ],
