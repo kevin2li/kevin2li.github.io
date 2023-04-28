@@ -5,7 +5,7 @@ date: '2023-04-27 18:01:33'
 desc: ''
 id: fxx5840yugr5v98flyg1phm
 title: matplotlib
-updated: 1682652980816
+updated: 1682660580462
 ---
 
 ## 简介
@@ -372,7 +372,7 @@ ax.annotate("I'm here!", [4,6], [5,5], arrowprops={"arrowstyle":"->","facecolor"
 
 ![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/86cc4177032978a5bd6bc692c1343b14.image.png)
 
-::: info{title="箭头样式"}
+::: info 箭头样式
 ![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/0fb00d176992c3f8eacec2b2b19f1ad7.image.png)
 :::
 
