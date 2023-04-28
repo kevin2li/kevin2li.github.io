@@ -1,5 +1,0 @@
-import{_ as o,W as a,X as l,Z as e,$ as t,a0 as s,Y as r,D as c}from"./framework-c9619a7b.js";const h={},i={href:"https://blog.dendron.so/notes/P1DL2uXHpKUCa7hLiFbFA/",target:"_blank",rel:"noopener noreferrer"},p=e("p",null,"[[数位dp|Algorithm.动态规划.数位dp]]",-1),d=e("p",null,"[[Algorithm.动态规划.区间dp]]",-1),_=e("p",null,"[[",-1),m=e("p",null,"[[template.daily]]",-1);function u(g,f){const n=c("ExternalLinkIcon");return a(),l("div",null,[e("p",null,[t("This template was applied using the daily journal schema. Edit the [[template.daily]] note to change this template. To create your own schemas to auto-apply templates when they match a hierarchy, follow the "),e("a",i,[t("schema tutorial"),s(n)]),t(" to get started.")]),r(`
-Based on the journaling method created by Intelligent Change:
-- [Intelligent Change: Our Story](https://www.intelligentchange.com/pages/our-story)
-- [The Five Minute Journal](https://www.intelligentchange.com/products/the-five-minute-journal)
-`),p,d,_,m])}const y=o(h,[["render",u],["__file","26.html.vue"]]);export{y as default};
