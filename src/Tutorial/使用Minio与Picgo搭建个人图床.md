@@ -4,7 +4,7 @@ created: 1682573131987
 date: '2023-04-27'
 id: bwmouyxtd6gzwl1033tx4fx
 title: 使用Minio与Picgo搭建个人图床
-updated: 1682644078832
+updated: 1682650135111
 ---
 
 ## 简介
@@ -33,8 +33,8 @@ services:
     restart: unless-stopped # always
     
     environment:
-      MINIO_ROOT_USER: kevin2li
-      MINIO_ROOT_PASSWORD: ^minio@Kevin2li$
+      MINIO_ROOT_USER: user
+      MINIO_ROOT_PASSWORD: pass
     # 数据卷设置
     volumes:
       - ${PWD}/data:/data
@@ -88,6 +88,7 @@ docker compose up -d
 本文通过[nps](https://github.com/ehang-io/nps)这一内网穿透工具实现隧道搭建，将本地的`9001`端口映射到公网云服务器的`9200`端口。
 
 ![](https://minio.kevin2li.top/image-bed/20230427144720.png)
+
 注：同时要在云服务器开放`9200`端口
 
 #### caddy反向代理
@@ -138,7 +139,5 @@ ddns --id <your_id> --token <your_token> --index4 "public" --dns "dnspod" --ipv4
 
 ## 参考
 
-1.  [掘金------Docker 搭建 Minio
-    对象存储服务](https://juejin.cn/post/7203258813893345340)
-2.  [博客园------PicGo minio
-    图床](https://www.cnblogs.com/mikemhm/p/16160988.html)
+1.  [掘金------Docker 搭建 Minio 对象存储服务](https://juejin.cn/post/7203258813893345340)
+2.  [博客园------PicGo minio 图床](https://www.cnblogs.com/mikemhm/p/16160988.html)
