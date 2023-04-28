@@ -1,7 +1,7 @@
 ---
 category: Linux
 created: 1682484274765
-date: '2023-04-26'
+date: '2023-04-26 12:44:34'
 desc: ''
 id: 43ze2mii87k0x1t6hd5fgnk
 title: 设备管理

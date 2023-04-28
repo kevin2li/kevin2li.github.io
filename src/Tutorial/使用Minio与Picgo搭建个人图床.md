@@ -1,7 +1,7 @@
 ---
 category: Tutorial
 created: 1682573131987
-date: '2023-04-27'
+date: '2023-04-27 13:25:31'
 id: bwmouyxtd6gzwl1033tx4fx
 title: 使用Minio与Picgo搭建个人图床
 updated: 1682652980838

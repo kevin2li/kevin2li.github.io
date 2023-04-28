@@ -1,7 +1,7 @@
 ---
 category: template
 created: 1682483341979
-date: '2023-04-26'
+date: '2023-04-26 12:29:01'
 desc: ''
 id: e11p84oi8aool2fp5ssx8z9
 title: Daily Journal Template

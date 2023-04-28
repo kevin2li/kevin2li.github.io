@@ -1,7 +1,7 @@
 ---
 category: Language
 created: 1682601047316
-date: '2023-04-27'
+date: '2023-04-27 21:10:47'
 desc: ''
 id: pj2qfnt6imyds8dkwa24uva
 title: yaml

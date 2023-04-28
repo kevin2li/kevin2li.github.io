@@ -1,7 +1,7 @@
 ---
 category: Linux
 created: 1682589389316
-date: '2023-04-27'
+date: '2023-04-27 17:56:29'
 desc: ''
 id: xrbmp5xvmxafmpxl0uu1hy0
 title: Oh-My-Zsh终端美化

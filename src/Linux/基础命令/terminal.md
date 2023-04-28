@@ -1,7 +1,7 @@
 ---
 category: Linux
 created: 1682484227345
-date: '2023-04-26'
+date: '2023-04-26 12:43:47'
 desc: ''
 id: 3c907m30podo1wr4ul0kz53
 title: 终端管理

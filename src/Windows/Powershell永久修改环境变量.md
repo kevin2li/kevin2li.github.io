@@ -1,7 +1,7 @@
 ---
 category: Windows
 created: 1682590062121
-date: '2023-04-27'
+date: '2023-04-27 18:07:42'
 desc: ''
 id: 3r24zc53fkceuslyncqs5z0
 title: Powershell永久修改环境变量
