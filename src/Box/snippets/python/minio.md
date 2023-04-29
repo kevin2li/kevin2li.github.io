@@ -5,10 +5,10 @@ date: '2023-04-27 15:59:03'
 desc: ''
 id: q7sf2b16rvom2rdaq55dab1
 title: minio
-updated: 1682593278408
+updated: 1682738252233
 ---
 
-# 功能
+## 功能
 上传文件到Minio对象存储服务
 
 ``` python
