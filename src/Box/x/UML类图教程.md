@@ -5,10 +5,8 @@ date: '2023-04-29 11:47:02'
 desc: ''
 id: 2bix40fp24gidreqj0g77n6
 title: UML类图教程
-updated: 1682743899758
+updated: 1682744337182
 ---
-
-
 
 
 ## 简介
