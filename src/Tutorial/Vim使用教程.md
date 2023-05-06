@@ -380,43 +380,43 @@ q
 
 | 配置选项                      | 说明                                                       |
 | ----------------------------- | ---------------------------------------------------------- |
-| `set number                 ` | 显示行号                                                   |
-| `set autoindent             ` | 自动缩进                                                   |
-| `set smartindent            ` | 智能缩进，根据上一行的缩进方式来缩进                       |
-| `set tabstop=4              ` | tab 为 4 个空格                                            |
-| `set shiftwidth=4           ` | 设置每次缩进的空格数为 4                                   |
-| `set autoread               ` | 当文件被改动时自动载入                                     |
-| `syntax on                  ` | 语法高亮                                                   |
-| `set ignorecase             ` | 搜索时忽略大小写                                           |
+| `set number`                  | 显示行号                                                   |
+| `set autoindent`              | 自动缩进                                                   |
+| `set smartindent`             | 智能缩进，根据上一行的缩进方式来缩进                       |
+| `set tabstop=4`               | tab 为 4 个空格                                            |
+| `set shiftwidth=4`            | 设置每次缩进的空格数为 4                                   |
+| `set autoread`                | 当文件被改动时自动载入                                     |
+| `syntax on`                   | 语法高亮                                                   |
+| `set ignorecase`              | 搜索时忽略大小写                                           |
 | `set smartcase`               | 搜索时区分大小写，但如果搜索词全小写则忽略大小写           |
-| `set mouse=a                ` | 鼠标支持                                                   |
-| `set clipboard=unnamedplus  ` | 允许使用鼠标复制和粘贴                                     |
+| `set mouse=a`                 | 鼠标支持                                                   |
+| `set clipboard=unnamedplus`   | 允许使用鼠标复制和粘贴                                     |
 | `set backupdir=~/.vim/backup` | 备份文件目录                                               |
-| `set expandtab              ` | 将 tab 转为空格                                            |
-| `set hlsearch               ` | 高亮显示搜索结果                                           |
-| `set incsearch              ` | 在搜索时逐步显示结果                                       |
+| `set expandtab`               | 将 tab 转为空格                                            |
+| `set hlsearch`                | 高亮显示搜索结果                                           |
+| `set incsearch`               | 在搜索时逐步显示结果                                       |
 | `set showmatch`               | 在插入括号时高亮显示匹配的括号                             |
-| `set nowrap                 ` | 不折行显示内容                                             |
-| `set wrap                   ` | 折行显示内容                                               |
-| `set noswapfile             ` | 禁止创建 swap 文件                                         |
-| `set path=.,**              ` | 设置 Vim 的寻找文件路径，在当前目录和所有子目录下查找文件  |
-| `set ruler                  ` | 显示当前光标所在行和列的位置                               |
-| `set spell                  ` | 开启拼写检查功能                                           |
-| `set spelllang=en_us        ` | 设置拼写检查语言为英语                                     |
-| `set foldmethod=indent      ` | 按照缩进级别进行折叠                                       |
-| `set foldcolumn=2           ` | 设置折叠列的宽度为 2                                       |
-| `set scrolloff=3            ` | 设置距离屏幕顶端和底端的距离，以保证光标始终在屏幕中央     |
-| `set textwidth=80           ` | 设置每行最大字符数为 80                                    |
-| `set undofile               ` | 开启撤销文件功能，每次编辑时都会自动生成一个撤销文件       |
-| `set undolevels=1000        ` | 设置撤销文件保存的最大历史记录数为 1000                    |
-| `set undoreload=10000       ` | 设置 Vim 自动重新加载撤销文件的时间间隔为 10000 次编辑操作 |
-| `set nofoldenable           ` | 禁用折叠功能                                               |
-| `set foldenable             ` | 启用折叠功能                                               |
-| `set cursorline             ` | 高亮显示当前行                                             |
-| `set cursorcolumn           ` | 高亮显示当前列                                             |
+| `set nowrap`                  | 不折行显示内容                                             |
+| `set wrap`                    | 折行显示内容                                               |
+| `set noswapfile`              | 禁止创建 swap 文件                                         |
+| `set path=.,**`               | 设置 Vim 的寻找文件路径，在当前目录和所有子目录下查找文件  |
+| `set ruler`                   | 显示当前光标所在行和列的位置                               |
+| `set spell`                   | 开启拼写检查功能                                           |
+| `set spelllang=en_us`         | 设置拼写检查语言为英语                                     |
+| `set foldmethod=indent`       | 按照缩进级别进行折叠                                       |
+| `set foldcolumn=2`            | 设置折叠列的宽度为 2                                       |
+| `set scrolloff=3`             | 设置距离屏幕顶端和底端的距离，以保证光标始终在屏幕中央     |
+| `set textwidth=80`            | 设置每行最大字符数为 80                                    |
+| `set undofile`                | 开启撤销文件功能，每次编辑时都会自动生成一个撤销文件       |
+| `set undolevels=1000`         | 设置撤销文件保存的最大历史记录数为 1000                    |
+| `set undoreload=10000`        | 设置 Vim 自动重新加载撤销文件的时间间隔为 10000 次编辑操作 |
+| `set nofoldenable`            | 禁用折叠功能                                               |
+| `set foldenable`              | 启用折叠功能                                               |
+| `set cursorline`              | 高亮显示当前行                                             |
+| `set cursorcolumn`            | 高亮显示当前列                                             |
 | `set list`                    | 显示行尾空格等不可打印字符                                 |
 | `set clipboard=unnamed`       | 允许与系统剪贴板交互                                       |
-| `export VISUAL=vim          ` | 将 Vim 设置为默认编辑器                                    |
+| `export VISUAL=vim`           | 将 Vim 设置为默认编辑器                                    |
 
 #### 插件管理
 插件管理器：[vim-plug]( https://github.com/junegunn/vim-plug )
@@ -503,6 +503,15 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ``` bash 
 set number
+set mouse=a
+
+" 解决tmux中粘贴缩进混乱
+if &term =~ "screen"                                                   
+    let &t_BE = "\e[?2004h"                                              
+    let &t_BD = "\e[?2004l"                                              
+    exec "set t_PS=\e[200~"                                              
+    exec "set t_PE=\e[201~"                                              
+endif
 
 call plug#begin()
 
