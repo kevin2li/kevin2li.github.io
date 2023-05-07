@@ -5,7 +5,7 @@ date: '2023-05-01 19:17:12'
 desc: ''
 id: unvhobazy97207p5sknvdz9
 title: Vim使用教程
-updated: 1683356654970
+updated: 1683459403116
 ---
 
 
@@ -550,6 +550,7 @@ Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
+let mapleader = ","
 
 """""""""""""""""""""""""""
 " easymotion插件配置
@@ -569,6 +570,54 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 ```
+
+
+### 在其他编辑器中使用vim
+#### VSCode
+可以安装[vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)插件，来获得类似原生vim的编辑体验。
+
+启用与关闭vim： `Ctrl-Shift-P`: `Vim: Toggle Vim Mode`
+
+自用配置：
+``` json
+"vim.smartRelativeLine": true,
+"vim.camelCaseMotion.enable": true,
+"vim.cursorStylePerMode.normal": "block",
+"vim.cursorStylePerMode.insert": "line",
+"vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-c>": false,
+    "<C-d>": false,
+    "<C-e>": false,
+    "<C-f>": false,
+    "<C-g>": false,
+    "<C-h>": false,
+    "<C-i>": false,
+    "<C-j>": false,
+    "<C-k>": false,
+    "<C-l>": false,
+    "<C-m>": false,
+    "<C-n>": false,
+    "<C-o>": false,
+    "<C-p>": false,
+    "<C-q>": false,
+    "<C-r>": false,
+    "<C-s>": false,
+    "<C-t>": false,
+    "<C-u>": false,
+    "<C-v>": false,
+    "<C-w>": false,
+    "<C-x>": false,
+    "<C-y>": false,
+    "<C-z>": false,
+},
+"vim.leader": ",",
+"vim.matchpairs": "(:),{:},[:],<:>",
+"vim.useSystemClipboard": true
+```
+#### JetBrains
+同样可以安装vim插件
 
 ### Cheatsheet
 ![](https://minio.kevin2li.top/image-bed/202305012053709.png)
