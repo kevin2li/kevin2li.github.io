@@ -5,7 +5,7 @@ date: '2023-05-01 19:17:12'
 desc: ''
 id: unvhobazy97207p5sknvdz9
 title: Vim使用教程
-updated: 1683459403116
+updated: 1683707778329
 ---
 
 
@@ -504,6 +504,12 @@ call plug#end()
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
 
+" 键位映射
+nmap <Leader>k yyP
+nmap <Leader>j yyp
+nmap <Leader>h ^
+nmap <Leader>h ^
+nmap <Leader>l g_
 ```
 
 命令说明：
