@@ -1,0 +1,25 @@
+import{_ as l,W as t,X as o,Y as d,Z as n,$ as a,a0 as s,a1 as i,D as r}from"./framework-c9619a7b.js";const c={},p=i(`<h1 id="方法" tabindex="-1"><a class="header-anchor" href="#方法" aria-hidden="true">#</a> 方法</h1><h2 id="安装驱动" tabindex="-1"><a class="header-anchor" href="#安装驱动" aria-hidden="true">#</a> 安装驱动</h2><ol><li>插入usb无线网卡，查看usb设备列表</li></ol><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>lsusb
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><figure><img src="https://minio.kevin2li.top/image-bed/vanblog/img/560db883867e1bb8ad7df449267eadf7.image.png" alt="image.png" tabindex="0" loading="lazy"><figcaption>image.png</figcaption></figure><ol start="2"><li>克隆仓库</li></ol><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> code
+<span class="token builtin class-name">cd</span> code
+<span class="token function">git</span> clone git@github.com:morrownr/88x2bu-20210702.git
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7),u=i(`<ol start="3"><li>安装依赖</li></ol><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">apt</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">sudo</span> <span class="token function">apt</span> upgrade
+<span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> build-essential dkms <span class="token function">git</span> iw
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="5"><li>编译安装</li></ol><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> 88x2bu-20210702
+<span class="token function">make</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>插拔一下设备</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>nmcli dev
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>可以看到已经识别到网卡了</p><figure><img src="https://minio.kevin2li.top/image-bed/vanblog/img/e75aa30f7e86d8c616dc747df2772aa5.image.png" alt="image.png" tabindex="0" loading="lazy"><figcaption>image.png</figcaption></figure><h2 id="连接网络" tabindex="-1"><a class="header-anchor" href="#连接网络" aria-hidden="true">#</a> 连接网络</h2>`,9),m={href:"https://blog.kevin2li.top/post/14",target:"_blank",rel:"noopener noreferrer"},b=i(`<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 开启wifi</span>
+nmcli radio wifi on
+
+<span class="token comment"># 查看网络设备列表</span>
+nmcli dev
+
+<span class="token comment"># 查看wifi列表</span>
+nmcli dev wifi list
+
+<span class="token comment"># 连接wifi</span>
+nmcli dev wifi connect <span class="token operator">&lt;</span>SSID<span class="token operator">&gt;</span> password <span class="token operator">&lt;</span>password<span class="token operator">&gt;</span> ifname wlp2s0
+
+<span class="token comment"># 断开连接</span>
+nmcli dev disconnect wlp2s0
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h1 id="参考" tabindex="-1"><a class="header-anchor" href="#参考" aria-hidden="true">#</a> 参考</h1>`,2),v={href:"https://github.com/morrownr/88x2bu-20210702",target:"_blank",rel:"noopener noreferrer"},h={href:"https://github.com/morrownr/USB-WiFi",target:"_blank",rel:"noopener noreferrer"},g={href:"https://zhuanlan.zhihu.com/p/584242562",target:"_blank",rel:"noopener noreferrer"};function f(k,_){const e=r("ExternalLinkIcon");return t(),o("div",null,[p,d(" more "),u,n("p",null,[a("参考："),n("a",m,[a("https://blog.kevin2li.top/post/14"),s(e)])]),b,n("ol",null,[n("li",null,[n("a",v,[a("https://github.com/morrownr/88x2bu-20210702"),s(e)])]),n("li",null,[n("a",h,[a("https://github.com/morrownr/USB-WiFi"),s(e)])]),n("li",null,[n("a",g,[a("https://zhuanlan.zhihu.com/p/584242562"),s(e)])])])])}const w=l(c,[["render",f],["__file","Ubuntu安装usb无线网卡驱动.html.vue"]]);export{w as default};
