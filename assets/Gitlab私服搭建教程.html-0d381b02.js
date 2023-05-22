@@ -1,0 +1,9 @@
+import{_ as a,p as e,q as n,a1 as s}from"./framework-5866ffd3.js";const i={},t=s(`<h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2><p>xx</p><h2 id="方法" tabindex="-1"><a class="header-anchor" href="#方法" aria-hidden="true">#</a> 方法</h2><h3 id="裸机安装" tabindex="-1"><a class="header-anchor" href="#裸机安装" aria-hidden="true">#</a> 裸机安装</h3><blockquote><p>参考：https://about.gitlab.com/install/#ubuntu</p></blockquote><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">curl</span> openssh-server ca-certificates tzdata perl
+
+
+<span class="token function">curl</span> https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">bash</span>
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="docker安装" tabindex="-1"><a class="header-anchor" href="#docker安装" aria-hidden="true">#</a> docker安装</h3><h2 id="参考" tabindex="-1"><a class="header-anchor" href="#参考" aria-hidden="true">#</a> 参考</h2>`,8),c=[t];function r(d,l){return e(),n("div",null,c)}const p=a(i,[["render",r],["__file","Gitlab私服搭建教程.html.vue"]]);export{p as default};
