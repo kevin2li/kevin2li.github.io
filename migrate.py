@@ -80,8 +80,9 @@ def move(data_dir, target_dir):
             insert_metadata(path, dst_path)
 
 if __name__ == "__main__":
+    p = Path(__file__)
     parser = argparse.ArgumentParser(description='My Configuration')
-    parser.add_argument('--src', type=str, default='../../notes')
+    parser.add_argument('--src', type=str, default=str(p.parent.parent/"notes"))
     parser.add_argument('--dst', type=str, default='src')
     args = parser.parse_args()
     move(args.src, args.dst)
