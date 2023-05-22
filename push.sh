@@ -1,8 +1,8 @@
 echo "[1/4] clean src folder..."
-rm -r src\
+rm -rf "src/!(vanblog)"
 
 echo "[2/4] recover preversed folder..."
-cp -r .\backup\* src
+cp -r ./backup/* src
 
 echo "[3/4] regenerate blog folder..."
 # ./migrate.py
