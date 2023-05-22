@@ -1,12 +1,12 @@
 echo "[1/4] clean src folder..."
-rm -r src\*
+rm -r src\
 
 echo "[2/4] recover preversed folder..."
 cp -r .\backup\* src
 
 echo "[3/4] regenerate blog folder..."
 # ./migrate.py
-C:\tools\miniconda3\envs\scaffold\python.exe ./migrate.py
+/home/kevin2li/miniconda3/bin/python /data/.vuepress/migrate.py
 
 echo "[4/4] prepare commit and push..."
 git add .

@@ -1,4 +1,3 @@
-#! C:\tools\miniconda3\envs\scaffold\python.exe
 import os
 import glob
 from pathlib import Path
@@ -9,6 +8,7 @@ import yaml
 from datetime import datetime
 import traceback
 from pprint import pprint
+import argparse
 
 def insert_metadata(src_path: str, dst_path:str, type="file"):
     if osp.exists(src_path) and osp.isfile(src_path):
@@ -48,6 +48,9 @@ def insert_metadata(src_path: str, dst_path:str, type="file"):
         print("\033[1;31m",f"'{src_path}' does not exist","\033[0m")
 
 def move(data_dir, target_dir):
+    data_dir = Path(data_dir).absolute()
+    target_dir = Path(target_dir).absolute()
+    print(f"move from: {str(data_dir)} to {str(target_dir)}")
     # 按类型分组拷贝到目标文件夹
     md_list = glob.glob(str(data_dir / "*.md"))
     print(f"found total {len(md_list)} markdown files!")
@@ -76,7 +79,10 @@ def move(data_dir, target_dir):
             dst_path = dst_dir / ".".join(parts[-2:])
             insert_metadata(path, dst_path)
 
-data_dir = Path(r"C:\Users\kevin\Dendron\notes")
-target_dir = Path(r"C:\Users\kevin\Dendron\.vuepress\src")
-move(data_dir, target_dir)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='My Configuration')
+    parser.add_argument('--src', type=str, default='/data/notes')
+    parser.add_argument('--dst', type=str, default='/data/.vuepress/src')
+    args = parser.parse_args()
+    move(args.src, args.dst)
 
