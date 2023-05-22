@@ -81,8 +81,8 @@ def move(data_dir, target_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='My Configuration')
-    parser.add_argument('--src', type=str, default='/data/notes')
-    parser.add_argument('--dst', type=str, default='/data/.vuepress/src')
+    parser.add_argument('--src', type=str, default='../../notes')
+    parser.add_argument('--dst', type=str, default='src')
     args = parser.parse_args()
     move(args.src, args.dst)
 

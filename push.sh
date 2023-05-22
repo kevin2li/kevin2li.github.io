@@ -6,7 +6,7 @@ cp -r .\backup\* src
 
 echo "[3/4] regenerate blog folder..."
 # ./migrate.py
-/home/kevin2li/miniconda3/bin/python /data/.vuepress/migrate.py
+/home/kevin2li/miniconda3/bin/python ./migrate.py
 
 echo "[4/4] prepare commit and push..."
 git add .
