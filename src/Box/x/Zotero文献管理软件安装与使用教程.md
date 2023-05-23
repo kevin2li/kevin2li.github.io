@@ -5,7 +5,7 @@ date: '2023-05-23 15:21:04'
 desc: ''
 id: cgnymkueocfyxulqqn56f81
 title: Zotero文献管理软件安装与使用教程
-updated: 1684830994639
+updated: 1684831327637
 ---
 
 ## 简介
@@ -45,6 +45,7 @@ Zotero的主要特点包括：
 "编辑>首选项>高级>常规"
 
 ![](https://minio.kevin2li.top/image-bed/blog/20230523153552.png)
+
 2. 添加附件
 
 ![](https://minio.kevin2li.top/image-bed/blog/20230523163059.png)

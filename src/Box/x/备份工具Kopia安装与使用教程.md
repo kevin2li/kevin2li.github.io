@@ -5,7 +5,7 @@ date: '2023-05-23 13:03:31'
 desc: ''
 id: s3p0r5dow6tt9ovb39khw82
 title: 备份工具Kopia安装与使用教程
-updated: 1684825785606
+updated: 1684834444968
 ---
 
 
@@ -54,3 +54,12 @@ Github: https://github.com/kopia/kopia
 点开其中一个快照历史,可以选择将其挂载到本地或者恢复到指定目录
 
 ![](https://minio.kevin2li.top/image-bed/blog/20230523131725.png)
+
+### 查看备份历史
+在任务标签页下可以查看每次备份的时间、状态等信息.
+
+![](https://minio.kevin2li.top/image-bed/blog/20230523173210.png)
+
+点开一次记录可以查看更详细的记录日志.
+
+![](https://minio.kevin2li.top/image-bed/blog/20230523173245.png)
