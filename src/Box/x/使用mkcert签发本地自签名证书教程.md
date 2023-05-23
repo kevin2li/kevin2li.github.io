@@ -4,8 +4,8 @@ created: 1684838428137
 date: '2023-05-23 18:40:28'
 desc: ''
 id: 8jlo6kijuuk6ye2a90uqp2m
-title: 使用mkcer签发本地自签名证书教程
-updated: 1684845261233
+title: 使用mkcert签发本地自签名证书教程
+updated: 1684845557237
 ---
 
 
@@ -137,7 +137,7 @@ httpd.serve_forever()
 
 **域名解析：**
 
-由于是在内网环境下，没有公共DNS解析，也没有内网DNS服务器，简单起见，我们通过修改`hosts`文件来将域名映射到ip。
+由于是在内网环境下，没有公共DNS解析，也没有设置内网DNS解析服务器，简单起见，我们通过修改`hosts`文件来将域名映射到ip。
 
 `hosts`文件路径：
 - Windows系统：C:\Windows\System32\drivers\etc\hosts
