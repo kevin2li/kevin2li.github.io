@@ -5,7 +5,7 @@ date: '2023-05-23 13:03:31'
 desc: ''
 id: s3p0r5dow6tt9ovb39khw82
 title: 备份工具Kopia安装与使用教程
-updated: 1684819122537
+updated: 1684819401613
 ---
 
 
@@ -31,6 +31,9 @@ Github: https://github.com/kopia/kopia
 
 ### 创建快照
 ![](https://minio.kevin2li.top/image-bed/blog/20230523131325.png)
+
+指定需要备份的目录路径,并配置备份策略
+![](https://minio.kevin2li.top/image-bed/blog/20230523132239.png)
 
 ### 配置备份策略
 
