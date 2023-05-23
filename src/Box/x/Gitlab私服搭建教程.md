@@ -5,7 +5,7 @@ date: '2023-05-22 13:11:33'
 desc: ''
 id: ttabxboou07jrozovi8b37r
 title: Gitlab私服搭建教程
-updated: 1684818185284
+updated: 1684824738377
 ---
 
 ## 简介
@@ -44,20 +44,25 @@ version: '3.6'
 services:
   web:
     image: 'gitlab/gitlab-ce:latest'
+    container_name: gitlab
     restart: always
-    hostname: 'gitlab.example.com'
+    hostname: 'gitlab.kevin2li.top'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'https://gitlab.example.com'
+        external_url 'https://gitlab.kevin2li.top'
         # Add any other gitlab.rb configuration here, each on its own line
+        gitlab_rails['gitlab_shell_ssh_port'] = 5022
+        nginx['listen_port'] = 80
+        nginx['listen_https'] = false
+      TZ: Asia/Shanghai
     ports:
-      - '6080:80'
-      - '6443:443'
-      - '6022:22'
+      - '5080:80'
+      - '5443:443'
+      - '5022:22'
     volumes:
-      - '$GITLAB_HOME/config:/etc/gitlab'
-      - '$GITLAB_HOME/logs:/var/log/gitlab'
-      - '$GITLAB_HOME/data:/var/opt/gitlab'
+      - '${PWD}/config:/etc/gitlab'
+      - '${PWD}/logs:/var/log/gitlab'
+      - '${PWD}/data:/var/opt/gitlab'
     shm_size: '256m'
 ```
 
@@ -65,10 +70,28 @@ services:
 ``` bash 
 docker compose up -d
 ```
+
+可能需要等待一会才能正常运行,可以进入容器查看状态:
+``` bash 
+docker exec -it gitlab bash
+# 查看状态
+gitlab-ctl status
+
+# 重启各项服务
+gitlab-ctl reconfigure
+```
+
+当出现下面结果时,说明已经正常运行
+
+![](https://minio.kevin2li.top/image-bed/blog/20230523142631.png)
+
+
 3. 域名访问配置
 - 域名可解析
+添加一条A记录,域名为`gitlab.kevin2li.top`.
 
 - 内网穿透
+将服务器的`5022`端口映射到本地服务器的`5022`端口.
 
 - 反向代理
 
@@ -127,3 +150,8 @@ sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 或者同意新注册的用户:
 
 ![](https://minio.kevin2li.top/image-bed/blog/20230523102457.png)
+
+之后就可以愉快的使用了.
+
+# 参考
+1. [Configure SSL for the GitLab Linux package ](https://docs.gitlab.com/omnibus/settings/ssl/#change-the-default-ssl-certificate-location)
