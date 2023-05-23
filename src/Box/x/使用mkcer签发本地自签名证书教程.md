@@ -5,7 +5,7 @@ date: '2023-05-23 18:40:28'
 desc: ''
 id: 8jlo6kijuuk6ye2a90uqp2m
 title: 使用mkcer签发本地自签名证书教程
-updated: 1684844744625
+updated: 1684845261233
 ---
 
 
@@ -159,6 +159,12 @@ httpd.serve_forever()
 点击浏览器的地址栏旁边的小锁图标，在“连接安全”里可以看到具体的证书信息。
 
 ![](https://minio.kevin2li.top/image-bed/blog/20230523202425.png)
+
+**局域网其他设备访问：**
+
+通过导入根证书，并修改`hosts`文件将域名指向内网服务器ip，也可以达到一样的效果。
+
+![](https://minio.kevin2li.top/image-bed/blog/20230523203359.png)
 
 ## 参考
 1. [云创源码 | 利用mkcert快速一键自签名局域网SSL证书本地 https 实现](https://www.loowp.com/24938.html)
