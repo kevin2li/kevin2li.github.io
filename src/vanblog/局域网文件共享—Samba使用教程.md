@@ -227,3 +227,11 @@ sudo pdbedit -w -L
 
 - Linux  
 路径：`smb://ip-address/sambashare`
+
+- Mac  
+
+![](https://minio.kevin2li.top/image-bed/blog/20230528091742.png)
+
+![](https://minio.kevin2li.top/image-bed/blog/20230528092723.png)
+
+![](https://minio.kevin2li.top/image-bed/blog/20230528092910.png)
