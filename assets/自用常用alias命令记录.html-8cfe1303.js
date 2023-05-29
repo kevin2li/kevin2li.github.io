@@ -1,0 +1,9 @@
+import{_ as s,W as a,X as n,a1 as e}from"./framework-c9619a7b.js";const l={},i=e(`<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment">## 防火墙管理</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">fw_add</span><span class="token operator">=</span><span class="token string">&#39;sudo firewall-cmd --permanent --zone=public --add-port&#39;</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">fw_del</span><span class="token operator">=</span><span class="token string">&#39;sudo firewall-cmd --permanent --zone=public --remove-port&#39;</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">fw_reload</span><span class="token operator">=</span><span class="token string">&#39;sudo firewall-cmd --reload&#39;</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">fw_view</span><span class="token operator">=</span><span class="token string">&#39;sudo firewall-cmd --list-all&#39;</span>
+
+<span class="token comment">## git</span>
+<span class="token builtin class-name">alias</span> <span class="token assign-left variable">git_acp</span><span class="token operator">=</span><span class="token string">&quot;git add . &amp;&amp; git commit -m &#39;update&#39; &amp;&amp; git push&quot;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,1),t=[i];function p(c,o){return a(),n("div",null,t)}const d=s(l,[["render",p],["__file","自用常用alias命令记录.html.vue"]]);export{d as default};
