@@ -5,7 +5,7 @@ date: '2023-05-01 19:17:12'
 desc: ''
 id: unvhobazy97207p5sknvdz9
 title: Vim使用教程
-updated: 1685339415037
+updated: 1685340324577
 ---
 
 
@@ -553,6 +553,7 @@ call plug#begin()
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-commentary' 
 
 call plug#end()
 

@@ -5,7 +5,7 @@ date: '2023-05-29 13:21:32'
 desc: ''
 id: 3qhd5ajq4nwhcppd6oevrdr
 title: 自用常用alias命令记录
-updated: 1685338559715
+updated: 1685339673329
 ---
 
 ``` bash 
@@ -17,5 +17,11 @@ alias fw_view='sudo firewall-cmd --list-all'
 
 ## git
 alias git_acp="git add . && git commit -m 'update' && git push"
+
+# 服务
+alias service_status="sudo systemctl status "
+alias service_start="sudo systemctl start "
+alias service_restart="sudo systemctl restart "
+alias service_stop="sudo systemctl stop "
 ```
 

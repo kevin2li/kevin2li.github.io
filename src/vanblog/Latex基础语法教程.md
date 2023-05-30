@@ -181,7 +181,7 @@ $$
 \right|
 $$
 
-:::info{title="常用符号"}
+:::info 常用符号
 希腊字母：
 
 ![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/58d014e1eb07e8d4bc9b0922d90e1dfb.image.png)
@@ -194,10 +194,18 @@ $$
 
 ![image.png](https://minio.kevin2li.top/image-bed/vanblog/img/b928c3641300ca83d8acde121062dbd5.image.png)
 
+花体：
+``` latex 
+\mathcal{L}
+```
+如：$\mathcal{L}$
+
 > 参考  
 > 1. [Cheatsheet for LaTeX Math Commands](https://tilburgsciencehub.com/building-blocks/collaborate-and-share-your-work/write-your-paper/amsmath-latex-cheatsheet/)
 > 2. [LATEX Math for Undergrads](http://tug.ctan.org/info/undergradmath/undergradmath.pdf)
 :::
+
+
 ## 列表
 ### 无序列表
 示例：
