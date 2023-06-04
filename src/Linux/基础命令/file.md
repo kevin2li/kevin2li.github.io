@@ -5,7 +5,7 @@ date: '2023-04-26 12:40:30'
 desc: ''
 id: 3zv8uwsn42iccjabhc4wuvd
 title: 文件管理
-updated: 1682562388427
+updated: 1685536770881
 ---
 
 ### 查看、切换、新建、移动、复制、重命名、删除、链接
@@ -420,7 +420,6 @@ batch -f path/to/file
 ### 文件查找
 - `find`
 
-
 ```bash
 # Find files by extension:
 find root_path -name '*.ext'
@@ -446,9 +445,8 @@ find root_path -daystart -mtime -7
 # Find empty (0 byte) files and delete them:
 find root_path -type f -empty -delete
 ```
+
 - `locate`
-
-
 ```bash
 # Look for pattern in the database. Note: the database is recomputed periodically (usually weekly or daily):
 locate pattern
