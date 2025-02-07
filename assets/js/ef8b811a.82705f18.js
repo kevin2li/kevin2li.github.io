@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus=self.webpackChunkdocusaurus||[]).push([[8947],{6600:u=>{u.exports=JSON.parse('{"authors":[{"name":"Kevin2li","title":"PDF Guru Anki\u5f00\u53d1\u8005","url":"https://github.com/kevin2li","imageURL":"https://guru.kevin2li.top/img/avatar.jpeg","key":"Kevin2li","page":null,"count":7}]}')}}]);
