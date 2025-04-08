@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>用户协议</title>
+    <style>
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        p {
+            line-height: 1.5rem;
+        }
+
+        .patty:after,
+        .patty:before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 4px;
+            position: absolute;
+            z-index: -1;
+            -moz-transition: all .3s;
+            -o-transition: all .3s;
+            -webkit-transition: all .3s;
+            transition: all .3s
+        }
+
+        .patty:before {
+            background: #333;
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        .patty:after {
+            background: #333;
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .terminal-inner {
+            font-size: 14px;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            margin-top: -160px;
+            margin-left: -416px;
+            width: 800px;
+            padding: 16px;
+            background: #333;
+            color: #eee;
+            border-radius: 10px;
+            overflow-x: auto;
+            padding-top: 48px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.44)
+        }
+
+        @media(max-width:800px) {
+            .terminal-inner {
+                left: 0;
+                right: 0;
+                margin-left: 0;
+                width: auto;
+                overflow-x: scroll
+            }
+
+            .terminal-inner img {
+                right: 0;
+                width: auto !important
+            }
+        }
+
+        .terminal-inner pre {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            min-height: 15px;
+            overflow: visible
+        }
+
+        .cm-comment {
+            color: grey
+        }
+
+        .cm-key {
+            color: #ff9800
+        }
+
+        .cm-string {
+            color: #8bc34a
+        }
+
+        .cm-name {
+            color: #8bc34a
+        }
+
+        #hide-linux .patty:after,
+        #hide-linux .patty:before {
+            background: white
+        }
+
+        .linux-binary-download {
+            position: fixed;
+            text-align: center;
+            top: -100px;
+            top: calc(50% + 180px);
+            width: 100%;
+            font-size: 13px;
+            color: #aaa
+        }
+
+        .instruction-link {
+            position: fixed;
+            text-align: center;
+            bottom: 30px;
+            width: 100%;
+            font-size: 13px;
+            color: #aaa
+        }
+
+        .linux-binary-download a,
+        .linux-binary-download a:hover,
+        .linux-binary-download a:visited,
+        .linux-binary-download a:focus,
+        .instruction-link a,
+        .instruction-link a:hover,
+        .instruction-link a:visited,
+        .instruction-link a:focus {
+            color: #ccc;
+            text-decoration: underline
+        }
+
+        body {
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            padding-bottom: 30px
+        }
+
+        .wrapper {
+            margin: auto;
+            max-width: 1000px;
+            padding: 20px 40px
+        }
+
+        .header-logo h1 {
+            font-weight: normal;
+            margin: 0;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -4px;
+            margin-left: .5ch;
+            text-transform: none;
+            padding: 0;
+            font-weight: 200
+        }
+
+        .header-links a:first-child {
+            margin-right: 8px;
+            background: #ddd3df
+        }
+
+        .header-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+            background: white;
+            border: 1px solid #eee;
+            display: inline-flex;
+            padding: 12px 24px;
+            line-height: 24px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 1.2em;
+            transition: background .2s;
+            color: #13121c;
+            text-decoration: none
+        }
+
+        .header-logo {
+            display: inline-block;
+            margin-left: -8px
+        }
+
+        .header-links {
+            float: right;
+            margin-top: 12px
+        }
+
+        .header-links .fa {
+            margin-right: 8px;
+            color: #555
+        }
+
+        .header-links a:hover {
+            background: #555;
+            color: white
+        }
+
+        .header-links a:hover .fa {
+            color: white
+        }
+
+        .main-text {
+            font-size: 56px;
+            padding-top: 0;
+            line-height: 1.4
+        }
+
+        .product-desc {
+            font-size: 48px;
+            color: #888
+        }
+
+        .main-screenshot img {
+            width: 100%;
+            margin: auto;
+            display: block;
+            margin-top: 120px
+        }
+
+        .feature-text {
+            margin-top: 8px;
+            color: #999;
+            font-size: 24px;
+            line-height: 1.4
+        }
+
+        .main-screenshot {
+            background: url(/img/screen/Group-screen.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 100px
+        }
+
+        a.btn-large {
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid #eee;
+            padding: 18px 32px;
+            line-height: 24px;
+            background: #555;
+            color: white;
+            align-items: center;
+            border-radius: 28px;
+            font-size: 24px;
+            min-width: 118px;
+            text-align: center
+        }
+
+        .download {
+            margin: 48px 0
+        }
+
+        .download-options {
+            background: white;
+            border: 1px solid #eee;
+            display: inline-flex;
+            padding: 18px 32px;
+            border-radius: 28px;
+            margin-left: 14px;
+            margin-right: 2px;
+            color: #999;
+            line-height: 1
+        }
+
+        @media(max-width:806px) {
+            .download-options {
+                margin: 18px 0
+            }
+        }
+
+        @media(max-width:666px) {
+            .or-button {
+                display: none !important
+            }
+        }
+
+        #download-btn:hover {
+            background: transparent;
+            color: black;
+            border: 1px solid black
+        }
+
+        #purchase-btn:hover {
+            background: transparent;
+            color: black;
+            border: 1px solid black
+        }
+
+        .download-options a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .download-options svg {
+            height: 24px;
+            fill: #777
+        }
+
+        .download-os {
+            margin: 0
+        }
+
+        .download-options a:hover svg,
+        .download-options a:hover {
+            fill: #000;
+            color: #000
+        }
+
+        .download-options .download-text {
+            margin-top: 6px;
+            display: inline-block
+        }
+
+        .download-sep {
+            width: 1px;
+            height: 28px;
+            display: inline-block;
+            background: #c7c7c7;
+            margin: 0 16px
+        }
+
+        .download-win {
+            display: inline-block;
+            margin-left: 12px
+        }
+
+        #purchase-btn {
+            background: #607d8b;
+            vertical-align: top;
+            margin-top: 4px
+        }
+
+        .purchase-price {
+            color: #666;
+            font-size: 56px
+        }
+
+        .purchase-hint {
+            color: #888
+        }
+
+        .help-item {
+            color: #888;
+            line-height: 1.8;
+            margin-top: 32px
+        }
+
+        mark {
+            background: transparent;
+            font-weight: bold;
+            color: inherit
+        }
+
+        .help-item h4 {
+            font-size: 24px;
+            margin: 0;
+            margin-left: -44px;
+            font-weight: normal
+        }
+
+        @media(max-width:1120px) {
+            .help-item h4 {
+                margin-left: 0
+            }
+        }
+
+        .help-item h4 .fa {
+            margin-right: 12px
+        }
+
+        .help-item a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid
+        }
+
+        .help-item a:hover {
+            background: #333;
+            color: white
+        }
+
+        .help-item p {
+            margin: 0
+        }
+
+        hr {
+            overflow: visible;
+            padding: 0;
+            border: 0;
+            border-top: 1px solid #aaa;
+            color: #aaa;
+            text-align: center;
+            margin-top: 64px;
+            margin-bottom: 64px
+        }
+
+        hr:after {
+            content: "◇";
+            display: inline-block;
+            position: relative;
+            top: -0.7em;
+            font-size: 1.5em;
+            padding: 0 .25em;
+            background: #f7f7f7
+        }
+
+        .ipc-code,
+        .bottom-link a {
+            color: #999;
+            text-decoration: none
+        }
+
+        .bottom-link {
+            float: right;
+            color: #888
+        }
+
+        .bottom-link a {
+            color: #555
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav><a style="text-decoration: none; color: inherit;" class="left header-logo" href="/"><img
+                    src="/img/appicon.png" style="width:72px;display:inline-block;vertical-align:middle">
+                <h1>PDF Guru Anki</h1>
+            </a></nav>
+        <div class style="margin:auto;">
+            <h2 style="font-size: 2rem;">PDF Guru Anki User Agreement</h2>
+            <h3>1. General Terms</h3>
+            <p>
+                Thank you for choosing the subscription service of PDF Guru Anki!
+            </p>
+            <p>
+                Before using the PDF Guru Anki membership subscription service (hereinafter referred to as “the Service”),
+                you should read and agree to comply with the “PDF Guru Anki Membership Subscription Service Terms”
+                (hereinafter referred to as “these Terms”).
+            </p>
+            <h3>2. Membership Subscription Service Details</h3>
+            <p> Once you receive or activate the Service through payment, you will have continuous access to all
+                exclusive member features within PDF Guru Anki for the duration of the service period.
+            </p>
+
+            <h3>3. Continuous Monthly and Annual Subscription Services</h3>
+            <p>The continuous monthly service is an automatic renewal service provided to you on the premise that you
+                have already subscribed to the Service. If you opt for the continuous monthly or annual subscription, it
+                is deemed that you authorize PDF Guru Anki to deduct the service fee for the next billing cycle from your
+                personal recharge account, third-party payment account linked with PDF Guru Anki, bank card,
+                telecommunications account, iTunes account (collectively referred to as “Account”) when your current
+                membership subscription is about to expire. The deduction will occur within 24 hours before the end of
+                the billing cycle.
+
+                You need to bind PDF Guru Anki with the aforementioned Account and ensure there is sufficient balance to
+                support the deduction. Should the renewal fail due to insufficient balance in the Account, you will bear
+                the corresponding consequences.
+
+                PDF Guru Anki reserves the final right to interpret this service agreement.</p>
+            <h3>4. Cancellation of Renewal Services</h3>
+            <p>You can cancel the automatic renewal service on your iPhone by going to “Settings” —> “iTunes & App
+                Store” —> Click on your “Apple ID” and select “View Apple ID” to enter the “Account Settings” page.
+                There, click on “Subscriptions” to manage your auto-renewal services. To cancel, turn off the service at
+                least 24 hours before the end of each billing cycle. No charges will be made if you cancel within 24
+                hours before the expiration date.</p>
+            <p>Contact us: kevin2li@qq.com</p>
+            <p>Privacy Policy: <a href="https://guru.kevin2li.com/privacy.html">https://guru.kevin2li.com/privacy.html</a></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
